@@ -1,0 +1,139 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --text-color: #fff;
+    --background-color: #111;
+}
+
+body{
+    background-color: var(--background-color);
+    background-image: url(../img/effect.png);
+    background-position: 50%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    height: 120px;
+    width: 100%;
+}
+
+#date{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 10rem;
+    line-height: 1;
+}
+
+.box{
+    border-radius: 10%;
+    padding: 30px;
+}
+
+.box span{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.glass{
+    background: rgba(255, 255, 255, 0.007);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    position:  absolute;
+    bottom: 0;
+
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.dev{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:  relative; 
+}
+
+@media(max-width: 1042px){
+    .text{
+        font-size: 5rem;
+    }
+    .box span{
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 698px){
+    .text{
+        font-size: 2.7rem;
+    }
+    .box span{
+        font-size: 0.7rem;
+    }
+    .container{
+        gap: 10px;
+    }
+    .box{
+        padding: 20px;
+    }
+}
+
+@media(max-width: 438px){
+    .logo{
+        margin-top: 80px;
+        height: 100px;
+    }
+    .text{
+        font-size: 2.3rem;
+    }
+    .box span{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width: 295px){
+    .logo{
+        height: 80px;
+    }
+}
+
+
