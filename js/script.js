@@ -8,7 +8,7 @@ const segundos = document.getElementById("segundos");
 // const dateControl = document.getElementById("date");
 // date.value = "2024-06-05";
 
-const data = "06 Apr 2024";
+const data = "06 Apr 2025";
 
 
 function countdown(){
